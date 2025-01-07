@@ -1,34 +1,34 @@
-1. Chu?n b? ban �?u
-Ch?n m?t workflow: Quy?t �?nh s? d?ng m� h?nh l�m vi?c (Gitflow, Feature Branching, ho?c Trunk-based Development).
-Thi?t l?p repository:
-M?t th�nh vi�n t?o repository tr�n GitHub v� c?u h?nh quy?n truy c?p (Collaborators/Teams).
-C?u h?nh c�c nh�nh ch�nh:
-main ho?c master: Ch?a m? ngu?n ch�nh, �? ?n �?nh.
-develop (n?u d�ng Gitflow): Ch?a m? ngu?n �ang ��?c ph�t tri?n.
-�?ng b? c�ng c?: �?m b?o c�c th�nh vi�n c�i �?t Git, bi?t c�ch d�ng GitHub, v� c� c�ng c? ph� h?p (IDE, terminal, Git GUI, v.v.).
-2. Ph�n c�ng c�ng vi?c
-L?p k? ho?ch c�ng vi?c:
-T?o issues (v?n �?) tr�n GitHub �? qu?n l? t?ng task.
-S? d?ng GitHub Projects ho?c b?ng Kanban (Board) �? qu?n l? ti?n �?.
-G?n nh?n (Labels) cho c�c issues (bug, feature, documentation, v.v.).
-Assign (ph�n c�ng) t?ng issue cho th�nh vi�n.
-3. Ph�t tri?n t�nh n�ng (Feature Development)
-T?o nh�nh l�m vi?c:
+1. Chuẩn bị ban đầu
+Chọn một workflow: Quyết định sử dụng mô hình làm việc (Gitflow, Feature Branching, hoặc Trunk-based Development).
+Thiết lập repository:
+Một thành viên tạo repository trên GitHub và cấu hình quyền truy cập (Collaborators/Teams).
+Cấu hình các nhánh chính:
+main hoặc master: Chứa mã nguồn chính, đã ổn định.
+develop (nếu dùng Gitflow): Chứa mã nguồn đang được phát triển.
+Đồng bộ công cụ: Đảm bảo các thành viên cài đặt Git, biết cách dùng GitHub, và có công cụ phù hợp (IDE, terminal, Git GUI, v.v.).
+2. Phân công công việc
+Lập kế hoạch công việc:
+Tạo issues (vấn đề) trên GitHub để quản lý từng task.
+Sử dụng GitHub Projects hoặc bảng Kanban (Board) để quản lý tiến độ.
+Gắn nhãn (Labels) cho các issues (bug, feature, documentation, v.v.).
+Assign (phân công) từng issue cho thành viên.
+3. Phát triển tính năng (Feature Development)
+Tạo nhánh làm việc:
 
-M?i th�nh vi�n t?o m?t nh�nh m?i t? main ho?c develop:
+Mỗi thành viên tạo một nhánh mới từ main hoặc develop:
 bash
-Sao ch�p m?
+Sao chép mã
 git checkout -b feature/ten-chuc-nang
-Th?c hi?n thay �?i:
+Thực hiện thay đổi:
 
-Code v� ki?m tra c�c thay �?i tr�n nh�nh ri�ng.
-Commit th�?ng xuy�n v?i th�ng �i?p r? r�ng:
+Code và kiểm tra các thay đổi trên nhánh riêng.
+Commit thường xuyên với thông điệp rõ ràng:
 bash
-Sao ch�p m?
-git commit -m "M� t? thay �?i ng?n g?n"
-Push l�n GitHub:
+Sao chép mã
+git commit -m "Mô tả thay đổi ngắn gọn"
+Push lên GitHub:
 
-�?y nh�nh l�n repository:
+Đẩy nhánh lên repository:
 bash
-Sao ch�p m?
+Sao chép mã
 git push origin feature/ten-chuc-nang
