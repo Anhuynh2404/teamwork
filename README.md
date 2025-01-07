@@ -9,6 +9,7 @@ Chọn một workflow: Quyết định sử dụng mô hình làm việc (Gitflo
   - main hoặc master: Chứa mã nguồn chính, đã ổn định.
   - develop (nếu dùng Gitflow): Chứa mã nguồn đang được phát triển.
 - *Đồng bộ công cụ:* Đảm bảo các thành viên cài đặt Git, biết cách dùng GitHub, và có công cụ phù hợp (IDE, terminal, Git GUI, v.v.).
+
 **2. Phân công công việc**✒️
 
 **Lập kế hoạch công việc:**
@@ -16,6 +17,7 @@ Chọn một workflow: Quyết định sử dụng mô hình làm việc (Gitflo
 - Sử dụng GitHub Projects hoặc bảng Kanban (Board) để quản lý tiến độ.
 - Gắn nhãn (Labels) cho các issues (bug, feature, documentation, v.v.).
 - Assign (phân công) từng issue cho thành viên.
+
 **3. Phát triển tính năng (Feature Development)**🎈
 
 - *Tạo nhánh làm việc:*
@@ -28,6 +30,7 @@ Chọn một workflow: Quyết định sử dụng mô hình làm việc (Gitflo
 - *Push lên GitHub:*
   - Đẩy nhánh lên repository:
 > git push origin feature/ten-chuc-nang
+
 **4. Code Review và Pull Request (PR)**
 
 - *Tạo Pull Request (PR):*
@@ -38,12 +41,14 @@ Chọn một workflow: Quyết định sử dụng mô hình làm việc (Gitflo
   - Kiểm tra tự động bằng CI/CD (nếu có).
 - *Merge nhánh:*
   - Sau khi được chấp thuận, merge PR vào nhánh chính (sử dụng squash hoặc merge commit).
+
 **5. Kiểm tra và tích hợp**
 
 - *Kiểm tra tổng thể:*
   - Chạy kiểm thử (manual hoặc automated tests).
 - *Cập nhật tài liệu:*
   - Đảm bảo README.md, changelog, hoặc tài liệu kỹ thuật được cập nhật.
+
 **6. Quản lý sự cố (Bug Fixing)**
 
 - *Tạo nhánh sửa lỗi:*
@@ -52,6 +57,7 @@ Chọn một workflow: Quyết định sử dụng mô hình làm việc (Gitflo
   - Commit, push, và mở PR tương tự như phát triển tính năng.
 - *Merge nhanh:*
   - Merge vào cả main và develop (nếu có nhánh develop).
+
 **7. Phát hành (Release)**
 
 - *Tạo phiên bản mới:*
@@ -60,6 +66,7 @@ Chọn một workflow: Quyết định sử dụng mô hình làm việc (Gitflo
 > git push origin v1.0.0
 - *Đóng các issues liên quan:*
   - Liên kết PR hoặc commit với issue để tự động đóng.
+  
 **8. Tổng kết và cải tiến**
 
 - *Đánh giá sau dự án:*
